@@ -39,6 +39,4 @@ app.use(function(req, res, next) {
 // Listen to port 8000
 server.listen(process.env.PORT || 3000, function onListen() {
   var address = server.address();
-  console.log('Listening on: %j', address);
-  console.log(' -> that probably means: http://localhost:%d', address.port);
  });
