@@ -38,5 +38,5 @@ app.use(function(req, res, next) {
 
 // Listen to port 8000
 app.listen(process.env.PORT || 3000, function onListen() {
-  var address = app.address();
+  var app = app.address();
  });
