@@ -36,7 +36,7 @@ app.use(function(req, res, next) {
 
 // TODO: Error Handler
 
-// Listen to port 8000
+// Listen to port 
 app.listen(process.env.PORT || 3000, function onListen() {
-  var app = app.address();
+  console.log("Listning to port " + process.env.PORT || 3000)
  });
