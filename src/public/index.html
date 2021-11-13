@@ -21,7 +21,7 @@
         const obj = { name: name };
         const data = JSON.stringify(obj);
         $.ajax({
-          url: `http://localhost:8000/api/modules/searchBook/${name}`,
+          url: `https://tranquil-journey-81609.herokuapp.com/${name}`,
           type: 'GET',
           data: data,
           contentType: 'application/json; charset=utf-8',
@@ -67,7 +67,7 @@
         const obj = { name: name, author: author, year: year};
         const data = JSON.stringify(obj);
         $.ajax({
-          url: 'http://localhost:8000/api/modules/updateBook',
+          url: 'https://tranquil-journey-81609.herokuapp.com',
           type: 'PUT',
           data: data,
           contentType: 'application/json; charset=utf-8',
@@ -90,7 +90,7 @@
         const obj = { name: name, author: author, year: year };
         const data = JSON.stringify(obj);
         $.ajax({
-          url: 'http://localhost:8000/api/modules/createBook',
+          url: 'https://tranquil-journey-81609.herokuapp.com',
           type: 'POST',
           data: data,
           contentType: 'application/json; charset=utf-8',
@@ -111,7 +111,7 @@
         const obj = { name: name };
         const data = JSON.stringify(obj);
         $.ajax({
-          url: 'http://localhost:8000/api/modules/deleteBook',
+          url: 'https://tranquil-journey-81609.herokuapp.com',
           type: 'DELETE',
           data: data,
           contentType: 'application/json; charset=utf-8',
